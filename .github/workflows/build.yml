@@ -25,7 +25,7 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
           image: vue-app 
-          registry: ghcr.io/thanawat-Pete
+          registry: ghcr.io/thanawat-pete
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           tags: ${{ env.TAG_NAME }}, latest
